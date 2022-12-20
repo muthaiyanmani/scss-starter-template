@@ -1,4 +1,3 @@
-/* By Athlon Front-End Team */
 
 /* Core variables */
 @import 'base/variables';
@@ -12,9 +11,7 @@
 /* Mixins, helpers and functions */
 @import 'base/mixins';
 
-@import 'base/themes';
-
-/* Vendor */
+@import 'base/theme';
 
 /* Components */
 @import 'components/button';
