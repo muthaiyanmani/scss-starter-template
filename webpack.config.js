@@ -4,7 +4,7 @@
 
 const path = require('path');
 const fs = require('fs');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+// const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -53,7 +53,7 @@ module.exports = {
           },
         },
         generator: {
-          filename: 'images/design/[name].[hash:6][ext]',
+          filename: 'images/[name].[hash:6][ext]',
         },
       },
       {
@@ -111,22 +111,14 @@ module.exports = {
     }),
     // new CopyWebpackPlugin({
     //   patterns: [
-        // {
-        //   from: path.resolve(environment.paths.source, 'images', 'content'),
-        //   to: path.resolve(environment.paths.output, 'images', 'content'),
-        //   toType: 'dir',
-        //   globOptions: {
-        //     ignore: ['*.DS_Store', 'Thumbs.db'],
-        //   },
-        // },
-        // {
-        //   from: path.resolve(environment.paths.source, 'videos'),
-        //   to: path.resolve(environment.paths.output, 'videos'),
-        //   toType: 'dir',
-        //   globOptions: {
-        //     ignore: ['*.DS_Store', 'Thumbs.db'],
-        //   },
-        // },
+    //     {
+    //       from: path.resolve(environment.paths.source, 'images'),
+    //       to: path.resolve(environment.paths.output, 'images'),
+    //       toType: 'dir',
+    //       globOptions: {
+    //         ignore: ['*.DS_Store', 'Thumbs.db'],
+    //       },
+    //     }
     //   ],
     // }),
   ].concat(htmlPluginEntries),

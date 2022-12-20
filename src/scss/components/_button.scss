@@ -1,0 +1,15 @@
+
+.btn-primary{
+    background-color: $black;
+    color: $white;
+    border: 1px solid $black;
+    // &:hover{
+    //     background-color: $primary-hover;
+    //     border: 1px solid $primary-hover;
+    // }
+}
+
+.bg-primary{
+    background-color: theme-var($--theme-on-primary);
+    color:theme-var($--theme-on-surface);
+}
